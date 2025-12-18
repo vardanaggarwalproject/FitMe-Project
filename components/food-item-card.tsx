@@ -12,10 +12,10 @@ interface FoodItemCardProps {
 export function FoodItemCard({ name, restaurant, price, time, image, rating }: FoodItemCardProps) {
   return (
     <div className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow bg-white cursor-pointer h-full flex flex-col">
-      <div className="relative h-48 w-full flex-shrink-0">
+      <div className="relative h-40 sm:h-48 w-full flex-shrink-0">
         <Image src={image || "/placeholder.svg"} alt={name} fill className="object-cover" />
       </div>
-      <div className="p-4 space-y-2 flex-1 flex flex-col">
+      <div className="p-3 sm:p-4 space-y-2 flex-1 flex flex-col min-h-40 sm:min-h-44">
         <h3 className="font-bold text-base text-[#202020] line-clamp-2 min-h-[3rem]">{name}</h3>
         <p className="text-sm text-[#404040] line-clamp-1">{restaurant}</p>
         {rating && (
@@ -24,12 +24,12 @@ export function FoodItemCard({ name, restaurant, price, time, image, rating }: F
             <span className="text-[#404040] font-medium">{rating}</span>
           </div>
         )}
-        <div className="flex items-center justify-between text-sm pt-2 mt-auto">
+        <div className="flex items-center justify-between text-sm text-[#404040] pt-2 mt-auto">
           <span className="flex items-center gap-1 font-semibold text-[#fc8019]">
             <span>💰</span>
             {price}
           </span>
-          <span className="flex items-center gap-1 text-[#404040]">
+          <span className="flex items-center gap-1">
             <span className="text-[#fc8019]">⏱</span>
             {time}
           </span>

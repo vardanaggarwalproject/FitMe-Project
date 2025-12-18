@@ -36,8 +36,8 @@ const foodItems = [
 export function RecommendedFoodSection() {
   return (
     <div className="space-y-6">
-      <h2 className="text-3xl font-bold text-[#202020]">Recommended Food Items</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <h2 className="text-2xl sm:text-3xl font-bold text-[#202020]">Recommended Food Items</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-xs sm:max-w-none mx-auto sm:mx-0">
         {foodItems.map((item, index) => (
           <FoodItemCard key={index} {...item} />
         ))}
