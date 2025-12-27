@@ -5,7 +5,12 @@ interface CategoryCardProps {
   image: string
 }
 
-export function CategoryCard({ name, image }: CategoryCardProps) {
+interface categoryData{
+  data : CategoryCardProps
+}
+
+export default function CategoryCard({ data }: categoryData) {
+  const {name,image} = data;
   return (
     <div className="flex flex-col items-center gap-3 cursor-pointer group">
       <div className="relative w-32 h-32 rounded-full overflow-hidden shadow-md group-hover:shadow-xl transition-shadow">

@@ -1,0 +1,38 @@
+export const foodItems = [
+  {
+    title: "Paneer Tikka Rice Bowl",
+    subtitle: "The Good Bowl",
+    price: "₹200",
+    time: "20 Mins",
+    rating: 4.5,
+    image: "/FoodImage5.89d368c1.svg",
+    // variant: "food",
+  },
+  {
+    title: "Aloo Paratha Curd Meal (2 pcs)",
+    subtitle: "Lunch Box",
+    price: "₹169",
+    time: "25 Mins",
+    rating: 4.5,
+    image: "/FoodImage6.c12d2578.svg",
+    // variant: "food",
+  },
+  {
+    title: "Swap - Diet Meal Box",
+    subtitle: "Healthy Food, Salads",
+    price: "₹300",
+    time: "40 Mins",
+    rating: 4.5,
+    image: "/FoodImage7.b5d8e9b2.svg",
+    // variant: "food",
+  },
+  {
+    title: "The Good Bowl - Traditional Bowls",
+    subtitle: "North Indian, Punjabi",
+    price: "₹250",
+    time: "25 Mins",
+    rating: 4.8,
+    image: "/FoodImage8.707791d2.svg",
+    // variant: "food",
+  },
+]
