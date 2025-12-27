@@ -9,6 +9,7 @@ interface categoryData{
   data : CategoryCardProps
 }
 
+
 export default function CategoryCard({ data }: categoryData) {
   const {name,image} = data;
   return (
